@@ -1,0 +1,112 @@
+.fancybox-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    background: rgba( 33, 36, 38, 0.9 );
+    z-index: 8010;
+}
+
+.fancybox-overlay-fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-image {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    vertical-align: top;
+}
+
+.fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8020;
+}
+
+.fancybox-opened {
+    z-index: 8030;
+}
+
+.fancybox-skin {
+    position: relative;
+    background: #fff;
+}
+
+.fancybox-outer,
+.fancybox-inner {
+    position: relative;
+}
+
+.fancybox-close,
+.fancybox-nav {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    background: rgba( 33, 36, 38, 0.9 );
+    z-index: 8040;
+}
+
+.fancybox-inner {
+    overflow: hidden;
+}
+
+.fancybox-nav {
+    margin-top: -32px;
+    top: 50%;
+    -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+}
+
+.fancybox-prev {
+    right: initial;
+    left: 0;
+}
+
+.fancybox-image {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 680px) {
+    .fancybox-close,
+    .fancybox-close svg,
+    .fancybox-nav,
+    .fancybox-nav svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .fancybox-nav {
+        margin-top: -24px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .fancybox-close,
+    .fancybox-close svg,
+    .fancybox-nav,
+    .fancybox-nav svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .fancybox-nav {
+        margin-top: -16px;
+    }
+}
